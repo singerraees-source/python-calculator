@@ -1,4 +1,4 @@
-```python
+
 # Add function
 def add(a, b):
     return a + b
@@ -45,8 +45,8 @@ while True:
 
     # Number input lene ki koshish
     try:
-        num1 = float(input("Pehla number: "))
-        num2 = float(input("Dusra number: "))
+        num1 = int(input("Pehla number: "))
+        num2 = int(input("Dusra number: "))
 
     # Agar user number ki jagah text likhe
     except ValueError:
@@ -69,4 +69,4 @@ while True:
             print("Error! 0 se divide nahi kar sakte.")
         else:
             print("Answer =", div(num1, num2))
-```
+
