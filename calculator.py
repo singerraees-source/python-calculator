@@ -1,14 +1,18 @@
+```python
 # Add function
 def add(a, b):
     return a + b
+
 
 # Subtract function
 def sub(a, b):
     return a - b
 
+
 # Multiply function
 def mul(a, b):
     return a * b
+
 
 # Divide function
 def div(a, b):
@@ -21,9 +25,9 @@ while True:
     # Menu dikhana
     print("\n===== Calculator =====")
     print("1. Add")
-    print("2. Sub")
-    print("3. Mul")
-    print("4. Div")
+    print("2. Subtract")
+    print("3. Multiply")
+    print("4. Divide")
     print("5. Exit")
 
     # User se choice lena
@@ -36,12 +40,18 @@ while True:
 
     # Agar galat choice di
     if choice not in ["1", "2", "3", "4"]:
-        print("Galat choice!")
+        print("Galat choice! 1 se 5 tak choice select karo.")
         continue
 
-    # Do number lena
-    num1 = int(input("Pehla number: "))
-    num2 = int(input("Dusra number: "))
+    # Number input lene ki koshish
+    try:
+        num1 = float(input("Pehla number: "))
+        num2 = float(input("Dusra number: "))
+
+    # Agar user number ki jagah text likhe
+    except ValueError:
+        print("Error! Kripya valid number enter karo.")
+        continue
 
     # Choice ke hisaab se function chalana
     if choice == "1":
@@ -56,6 +66,7 @@ while True:
     elif choice == "4":
         # Divide by zero check
         if num2 == 0:
-            print("0 se divide nahi kar sakte.")
+            print("Error! 0 se divide nahi kar sakte.")
         else:
             print("Answer =", div(num1, num2))
+```
