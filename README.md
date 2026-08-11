@@ -20,7 +20,7 @@ A simple and user-friendly calculator built with Python.
 
 ```bash
 python calculator.py
-```
+```Git pull practice
 
 ## Author
 
