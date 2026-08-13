@@ -71,3 +71,4 @@ while True:
             print("Answer =", div(num1, num2))
 
 print("Git clone practice")
+print("Git pull practice")
