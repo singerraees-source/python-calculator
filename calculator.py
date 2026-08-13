@@ -70,3 +70,4 @@ while True:
         else:
             print("Answer =", div(num1, num2))
 
+print("Git clone practice")
